@@ -1,0 +1,41 @@
+experiment:
+  name: oliveira_qualitative
+  seed: 42
+
+network:
+  n_agents: 1000
+  mean_in_degree: 10.21
+  directed: true
+
+simulation:
+  # The main paper reports trajectories sampled every 10N iterations
+  # in its later characterisation experiment. 100 * 10N gives
+  # 1,000,000 iterations for N=1000.
+  #
+  # This is intentionally configurable because the exact Figure 2
+  # iteration count is not fully specified in the main article text.
+  iterations: 1000000
+
+  phi: 0.0
+  delta: 0.1
+  feed_size: 5
+  rewire: true
+
+  # Baseline DOCES filter IDs.
+  # These values are placeholders for the qualitative scaffold and
+  # must be checked against the exact Figure 2 parameterisation before
+  # claiming an exact reproduction.
+  posting_filter: 0
+  receiving_filter: 0
+
+conditions:
+  - name: mu_1
+    mu: 1.0
+
+  - name: mu_01
+    mu: 0.1
+
+analysis:
+  opinion_histogram_bins: 40
+  save_final_edges: true
+  save_cascade_summary: true

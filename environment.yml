@@ -1,0 +1,16 @@
+name: dmas-ai-slop
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - numpy<2
+  - scipy
+  - matplotlib
+  - networkx
+  - pyyaml
+  - pip
+  - setuptools
+  - wheel
+  - c-compiler
