@@ -1,0 +1,85 @@
+{
+  "config": {
+    "experiment": {
+      "name": "oliveira_fig2_replication",
+      "seed": 42
+    },
+    "seeds": {
+      "network": 42,
+      "opinions": 43,
+      "simulation": 6
+    },
+    "network": {
+      "n_agents": 1000,
+      "mean_in_degree": 10.21,
+      "directed": true
+    },
+    "simulation": {
+      "iterations": 100000,
+      "phi": 1.5707963267948966,
+      "delta": 0.1,
+      "feed_size": 1,
+      "rewire": true,
+      "posting_filter": 0,
+      "receiving_filter": 0
+    },
+    "conditions": [
+      {
+        "name": "mu_1",
+        "mu": 1.0
+      },
+      {
+        "name": "mu_01",
+        "mu": 0.1
+      }
+    ],
+    "analysis": {
+      "opinion_histogram_bins": 40,
+      "save_final_edges": true,
+      "save_cascade_summary": true
+    }
+  },
+  "generated_network": {
+    "edge_count": 10175,
+    "realised_mean_in_degree": 10.175
+  },
+  "summaries": {
+    "mu_1": {
+      "mu": 1.0,
+      "mean_opinion": -0.00900350972265005,
+      "std_opinion": 0.23728654720056988,
+      "min_opinion": -0.9657315015792847,
+      "max_opinion": 0.9203505516052246,
+      "bimodality_coefficient": 0.2709224275116391,
+      "positive_fraction": 0.476,
+      "negative_fraction": 0.524,
+      "same_sign_edge_fraction": 0.6522850122850122,
+      "is_bimodal": false,
+      "opinion_sign_assortativity": 0.30242130244816007,
+      "final_edge_count": 10175,
+      "n_cascades": 51106,
+      "mean_cascade_size": 1.0,
+      "median_cascade_size": 1.0,
+      "max_cascade_size": 1.0
+    },
+    "mu_01": {
+      "mu": 0.1,
+      "mean_opinion": 0.018160341173410414,
+      "std_opinion": 0.9675498366097687,
+      "min_opinion": -1.0,
+      "max_opinion": 1.0,
+      "bimodality_coefficient": 0.9840378776376704,
+      "positive_fraction": 0.513,
+      "negative_fraction": 0.487,
+      "same_sign_edge_fraction": 0.6912039312039312,
+      "is_bimodal": true,
+      "opinion_sign_assortativity": 0.38218343158537377,
+      "final_edge_count": 10175,
+      "n_cascades": 6072,
+      "mean_cascade_size": 12.641304347826088,
+      "median_cascade_size": 3.0,
+      "max_cascade_size": 3620.0
+    }
+  },
+  "replication_status": "qualitative scaffold; exact Figure 2 parameters still need verification"
+}

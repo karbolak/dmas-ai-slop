@@ -1,0 +1,38 @@
+experiment:
+  name: oliveira_fig2_replication
+
+seeds:
+  network: 42
+  opinions: 43
+  simulation: 6
+
+network:
+  n_agents: 1000
+  mean_in_degree: 10.21
+  directed: true
+
+simulation:
+  iterations: 100000
+
+  # Oliveira et al. Figure 2 parameters
+  phi: 1.5707963267948966   # pi / 2
+  delta: 0.1
+  feed_size: 1
+  rewire: true
+
+  # DOCES option 0 corresponds to the posting/receiving
+  # functions used in Oliveira et al.
+  posting_filter: 0
+  receiving_filter: 0
+
+conditions:
+  - name: mu_1
+    mu: 1.0
+
+  - name: mu_01
+    mu: 0.1
+
+analysis:
+  opinion_histogram_bins: 40
+  save_final_edges: true
+  save_cascade_summary: true
