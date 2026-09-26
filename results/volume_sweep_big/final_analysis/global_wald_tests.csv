@@ -1,0 +1,4 @@
+test,wald_chi_square,df,p_value,n_worlds
+synthetic prevalence main effect,869.5318747613372,5,1.0442321321527849e-185,10000
+activity main effect,29176.501370490605,6,0.0,10000
+prevalence × activity interaction,4042.4033979192513,30,0.0,10000

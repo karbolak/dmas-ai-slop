@@ -1,0 +1,52 @@
+Deterministic volume-sweep analysis
+===================================
+Input: results/volume_sweep_big/runs.csv
+SHA-256: 79a4a400817d5822d5c6ca4f80eeb15559eeebc8036de74948c58aeb40707d0c
+
+Validation / cleaning
+---------------------
+raw_rows: 858916
+unique_rows_after_dedup: 430000
+duplicate_keys: 428916
+duplicate_rows_removed: 428916
+max_key_multiplicity: 2
+inconsistent_duplicate_keys_on_core_metrics: 0
+unique_replicates: 10000
+unique_conditions: 43
+D_sign_matches_exposure_efficiency_gap_fraction: 1.0
+
+Repeated-measures omnibus Wald tests
+------------------------------------
+synthetic prevalence main effect: chi2(5)=869.532, p=1.04423e-185
+activity main effect: chi2(6)=29176.501, p=0
+prevalence × activity interaction: chi2(30)=4042.403, p=0
+
+Turnover summary
+----------------
+1%: peak tested activity=2x, peak mean D=+0.000398, zero crossing between 3x and 5x (linear interpolation=4.835x)
+5%: peak tested activity=3x, peak mean D=+0.001800, zero crossing between 5x and 7.5x (linear interpolation=5.281x)
+10%: peak tested activity=3x, peak mean D=+0.001941, zero crossing between 5x and 7.5x (linear interpolation=5.105x)
+15%: peak tested activity=3x, peak mean D=+0.003438, zero crossing between 5x and 7.5x (linear interpolation=5.001x)
+20%: peak tested activity=3x, peak mean D=+0.003705, zero crossing between 3x and 5x (linear interpolation=4.872x)
+25%: peak tested activity=2x, peak mean D=+0.003554, zero crossing between 3x and 5x (linear interpolation=4.673x)
+
+Key paired contrasts (Holm-adjusted)
+-----------------------------------
+1%, 7.5x − 3x: mean ΔD=-0.002084, 95% CI [-0.002536, -0.001632], dz=-0.090, Holm p=3.59027e-18
+1%, 10x − 3x: mean ΔD=-0.005133, 95% CI [-0.005633, -0.004633], dz=-0.201, Holm p=5.1792e-87
+1%, 15x − 3x: mean ΔD=-0.014111, 95% CI [-0.014686, -0.013536], dz=-0.481, Holm p=0
+5%, 7.5x − 3x: mean ΔD=-0.006949, 95% CI [-0.007794, -0.006103], dz=-0.161, Holm p=2.13845e-56
+5%, 10x − 3x: mean ΔD=-0.014834, 95% CI [-0.015706, -0.013963], dz=-0.334, Holm p=3.49635e-230
+5%, 15x − 3x: mean ΔD=-0.032726, 95% CI [-0.033616, -0.031836], dz=-0.721, Holm p=0
+10%, 7.5x − 3x: mean ΔD=-0.008822, 95% CI [-0.009791, -0.007852], dz=-0.178, Holm p=9.08088e-69
+10%, 10x − 3x: mean ΔD=-0.017082, 95% CI [-0.018050, -0.016113], dz=-0.346, Holm p=5.29039e-246
+10%, 15x − 3x: mean ΔD=-0.031990, 95% CI [-0.032906, -0.031074], dz=-0.685, Holm p=0
+15%, 7.5x − 3x: mean ΔD=-0.010588, 95% CI [-0.011599, -0.009578], dz=-0.205, Holm p=1.85844e-90
+15%, 10x − 3x: mean ΔD=-0.017717, 95% CI [-0.018689, -0.016745], dz=-0.357, Holm p=1.42357e-261
+15%, 15x − 3x: mean ΔD=-0.028683, 95% CI [-0.029599, -0.027767], dz=-0.614, Holm p=0
+20%, 7.5x − 3x: mean ΔD=-0.010656, 95% CI [-0.011660, -0.009652], dz=-0.208, Holm p=8.11354e-93
+20%, 10x − 3x: mean ΔD=-0.016720, 95% CI [-0.017666, -0.015773], dz=-0.346, Holm p=6.05207e-247
+20%, 15x − 3x: mean ΔD=-0.024355, 95% CI [-0.025240, -0.023469], dz=-0.539, Holm p=0
+25%, 7.5x − 3x: mean ΔD=-0.009652, 95% CI [-0.010622, -0.008683], dz=-0.195, Holm p=5.60187e-82
+25%, 10x − 3x: mean ΔD=-0.013834, 95% CI [-0.014756, -0.012911], dz=-0.294, Holm p=6.06909e-181
+25%, 15x − 3x: mean ΔD=-0.019596, 95% CI [-0.020461, -0.018730], dz=-0.444, Holm p=0
