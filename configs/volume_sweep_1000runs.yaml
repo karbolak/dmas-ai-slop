@@ -3,7 +3,7 @@ experiment:
 
 seeds:
   master: 20260924
-  replicates: 30
+  replicates: 1000
 
 network:
   n_agents: 1000
