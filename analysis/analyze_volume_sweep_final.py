@@ -642,7 +642,13 @@ def plot_heatmap(summary: pd.DataFrame, fractions: list[float], activities: list
                 matrix[i, j] = row.iloc[0]["exposure_minus_production_mean"]
 
     fig, ax = plt.subplots(figsize=(8, 4.8))
-    im = ax.imshow(matrix, aspect="auto")
+    from matplotlib.colors import TwoSlopeNorm
+
+    vmin = np.nanmin(matrix)
+    vmax = np.nanmax(matrix)
+    norm = TwoSlopeNorm(vmin=vmin, vcenter=0.0, vmax=vmax)
+
+    im = ax.imshow(matrix, aspect="auto", norm=norm, cmap="coolwarm")
     ax.set_xticks(range(len(activities)), labels=[activity_label(x) for x in activities])
     ax.set_yticks(range(len(fractions)), labels=[f"{x:.0%}" for x in fractions])
     ax.set_xlabel("Synthetic activity multiplier")
@@ -650,7 +656,7 @@ def plot_heatmap(summary: pd.DataFrame, fractions: list[float], activities: list
     ax.set_title(r"Mean $D$: exposure share − production share")
     for i in range(len(fractions)):
         for j in range(len(activities)):
-            ax.text(j, i, f"{matrix[i, j]:+.3f}", ha="center", va="center", fontsize=8)
+            ax.text(j, i, f"{matrix[i, j]:+.4f}", ha="center", va="center", fontsize=8)
     fig.colorbar(im, ax=ax, label="Mean D")
     fig.tight_layout()
     fig.savefig(path, dpi=220)
@@ -661,11 +667,25 @@ def plot_convergence(convergence: pd.DataFrame, path: Path) -> None:
     by_n = convergence.groupby("n_worlds").agg(
         max_abs_mean_difference=("absolute_difference_from_final_mean", "max"),
         max_ci95_half_width=("ci95_half_width", "max"),
-    ).reset_index()
+    ).reset_index().sort_values("n_worlds")
+
+    # Omit the final point from the blue series:
+    # at the final sample size, deviation from the final mean is 0 by construction.
+    by_n_dev = by_n.iloc[:-1].copy()
 
     fig, ax = plt.subplots(figsize=(7, 5))
-    ax.plot(by_n["n_worlds"], by_n["max_abs_mean_difference"], marker="o", label="Max |mean − final mean|")
-    ax.plot(by_n["n_worlds"], by_n["max_ci95_half_width"], marker="o", label="Max 95% CI half-width")
+    ax.plot(
+        by_n_dev["n_worlds"],
+        by_n_dev["max_abs_mean_difference"],
+        marker="o",
+        label="Max |mean − final mean|",
+    )
+    ax.plot(
+        by_n["n_worlds"],
+        by_n["max_ci95_half_width"],
+        marker="o",
+        label="Max 95% CI half-width",
+    )
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_xlabel("Number of independent worlds")

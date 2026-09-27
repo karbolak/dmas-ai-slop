@@ -1,0 +1,70 @@
+{
+  "config": {
+    "experiment": {
+      "name": "oliveira_qualitative",
+      "seed": 42
+    },
+    "network": {
+      "n_agents": 1000,
+      "mean_in_degree": 10.21,
+      "directed": true
+    },
+    "simulation": {
+      "iterations": 1000000,
+      "phi": 0.0,
+      "delta": 0.1,
+      "feed_size": 5,
+      "rewire": true,
+      "posting_filter": 0,
+      "receiving_filter": 0
+    },
+    "conditions": [
+      {
+        "name": "mu_1",
+        "mu": 1.0
+      },
+      {
+        "name": "mu_01",
+        "mu": 0.1
+      }
+    ],
+    "analysis": {
+      "opinion_histogram_bins": 40,
+      "save_final_edges": true,
+      "save_cascade_summary": true
+    }
+  },
+  "generated_network": {
+    "edge_count": 10175,
+    "realised_mean_in_degree": 10.175
+  },
+  "summaries": {
+    "mu_1": {
+      "mu": 1.0,
+      "mean_opinion": 0.022673658087849616,
+      "std_opinion": 0.5838941554976086,
+      "min_opinion": -1.0,
+      "max_opinion": 1.0,
+      "bimodality_coefficient_diagnostic": 0.5242352390764085,
+      "final_edge_count": 10175,
+      "n_cascades": 505479,
+      "mean_cascade_size": 1.0,
+      "median_cascade_size": 1.0,
+      "max_cascade_size": 1.0
+    },
+    "mu_01": {
+      "mu": 0.1,
+      "mean_opinion": -0.6740495389774441,
+      "std_opinion": 0.2034426238685798,
+      "min_opinion": -1.0,
+      "max_opinion": 1.0,
+      "bimodality_coefficient_diagnostic": 0.6470888325569467,
+      "final_edge_count": 10175,
+      "n_cascades": 54776,
+      "mean_cascade_size": 15.780998977654447,
+      "median_cascade_size": 2.0,
+      "max_cascade_size": 1354.0
+    }
+  },
+  "replication_status": "qualitative scaffold; exact Figure 2 parameters still need verification"
+}

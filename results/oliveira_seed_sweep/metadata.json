@@ -1,0 +1,74 @@
+{
+  "config": {
+    "experiment": {
+      "name": "oliveira_fig2_replication",
+      "seed": 42
+    },
+    "network": {
+      "n_agents": 1000,
+      "mean_in_degree": 10.21,
+      "directed": true
+    },
+    "simulation": {
+      "iterations": 100000,
+      "phi": 1.5707963267948966,
+      "delta": 0.1,
+      "feed_size": 1,
+      "rewire": true,
+      "posting_filter": 0,
+      "receiving_filter": 0
+    },
+    "conditions": [
+      {
+        "name": "mu_1",
+        "mu": 1.0
+      },
+      {
+        "name": "mu_01",
+        "mu": 0.1
+      }
+    ],
+    "analysis": {
+      "opinion_histogram_bins": 40,
+      "save_final_edges": true,
+      "save_cascade_summary": true
+    }
+  },
+  "seed_sweep": {
+    "start_seed": 0,
+    "n_seeds": 50
+  },
+  "summaries": [
+    {
+      "condition": "mu_1",
+      "mu": 1.0,
+      "n_runs": 50,
+      "mean_bc": 0.32504667159895234,
+      "median_bc": 0.195186593992678,
+      "std_bc": 0.25997325063627097,
+      "bimodal_runs": 9,
+      "bimodal_fraction": 0.18,
+      "mean_opinion_std": 0.28742664155853154,
+      "mean_assortativity": 0.2418427714690064,
+      "median_assortativity": 0.08382833132098796,
+      "median_max_cascade_size": 1.0,
+      "mean_max_cascade_size": 1.0
+    },
+    {
+      "condition": "mu_01",
+      "mu": 0.1,
+      "n_runs": 50,
+      "mean_bc": 0.49082196421479546,
+      "median_bc": 0.21806932853497035,
+      "std_bc": 0.3880997089794839,
+      "bimodal_runs": 19,
+      "bimodal_fraction": 0.38,
+      "mean_opinion_std": 0.3967284014000094,
+      "mean_assortativity": 0.16902215985486066,
+      "median_assortativity": 0.04063799000630208,
+      "median_max_cascade_size": 2179.5,
+      "mean_max_cascade_size": 2363.62
+    }
+  ],
+  "bimodality_threshold": 0.5555555555555556
+}

@@ -16,11 +16,16 @@ venv/
 .DS_Store
 
 # Generated research outputs
-results/*
-!results/.gitkeep
+#results/*
+results/volume_sweep_big/runs.csv
+results/volume_sweep_big/runs.csv.gz
+results/volume_sweep_big/final_analysis/cleaned_runs.csv.gz
 
-figures/*
-!figures/.gitkeep
+
+#!results/.gitkeep
+
+#figures/*
+#!figures/.gitkeep
 
 # Jupyter
 .ipynb_checkpoints/
