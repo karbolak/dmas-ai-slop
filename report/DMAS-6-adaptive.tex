@@ -10,7 +10,7 @@
 % Other font encondings may result in incorrect characters.
 %
 
-\usepackage{newtxtext}       % 
+\usepackage{newtxtext}       %
 \usepackage{amsmath}
 \usepackage[varvw]{newtxmath}       % selects Times Roman as basic font
 
@@ -206,7 +206,7 @@ Before introducing heterogeneous activity, we validated the simulator against th
 We extended DOCES with a relative activity weight \(w_i\) for each user \(i\). The probability of selecting agent \(i\) is
 
 \[
-P(i)=\frac{w_i}{\sum_j w_j}. 
+P(i)=\frac{w_i}{\sum_j w_j}.
 \]
 
 Human agents receive weight 1. Synthetic agents receive an activity multiplier \(m\). In the original activity sweep, no other behavioural rule depends on the synthetic label. Synthetic and human agents use the same content-creation probability, posting and receiving filters, opinion dynamics, and rewiring rule. The original sweep therefore isolates differences in activation frequency. The follow-up holds these weights fixed while comparing content policies.
@@ -214,7 +214,7 @@ Human agents receive weight 1. Synthetic agents receive an activity multiplier \
 For \(N_s\) synthetic and \(N_h\) human agents, the expected synthetic activation share is therefore
 
 \[
-S_{\mathrm{activation}} = \frac{N_s m}{N_h + N_s m}. 
+S_{\mathrm{activation}} = \frac{N_s m}{N_h + N_s m}.
 \]
 
 We validated the implementation independently. A two-agent test with weights 9 and 1 resulted in observed activation shares of approximately 0.900 and 0.100 over 100,001 selections.
@@ -361,15 +361,15 @@ For descriptive analysis of the turnover, we identified the tested activity leve
 
 The project repository contains the experiment configuration, deterministic seed manifest, experiment and analysis code, summary outputs, and generated figures. The full run-level dataset is retained separately because of its size and can be regenerated from the configuration and seed manifest.
 
-The final volume sweep is configured in \texttt{configs/volume\_sweep\_big.yaml} and orchestrated by \texttt{scripts/run\_big\_volume\_sweep.fish}, which invokes 
+The final volume sweep is configured in \texttt{configs/volume\_sweep\_big.yaml} and orchestrated by \texttt{scripts/run\_big\_volume\_sweep.fish}, which invokes
 
-\texttt{experiments/alpha\_volume\_sweep.py}. Final statistical analysis and figure generation are performed deterministically by 
+\texttt{experiments/alpha\_volume\_sweep.py}. Final statistical analysis and figure generation are performed deterministically by
 
 \texttt{analysis/analyze\_volume\_sweep\_final.py}.
 
 The checkpointed execution produced duplicate rows in the raw CSV output. Before analysis, rows were deterministically deduplicated using the tuple (replicate, synthetic fraction, activity multiplier). All duplicated keys agreed on the core simulation outcomes. A fresh validation found 858,916 raw rows and removed 428,916 duplicate rows, with no disagreements on the checked core outcomes. The resulting dataset contains exactly 430,000 unique condition-runs from 10,000 worlds and 43 conditions.
 
-The simulator revision used for the reported experiment is 
+The simulator revision used for the reported experiment is
 
 \path{2062803b4de482a6ec6abc1e0913abd88542119f}, and the research repository revision is
 
