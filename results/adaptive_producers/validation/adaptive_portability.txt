@@ -1,0 +1,1 @@
+PASS: saved-data analysis imports without loading DOCES or its binary

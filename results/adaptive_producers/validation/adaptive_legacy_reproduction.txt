@@ -1,0 +1,3 @@
+Exact count reproduction: world 0, prevalence=0.05, activity=1.0
+Exact count reproduction: world 0, prevalence=0.05, activity=15.0
+Exact count reproduction: world 0, prevalence=0.25, activity=3.0

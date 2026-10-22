@@ -1,0 +1,12 @@
+{
+  "worlds": 200,
+  "conditions": 36,
+  "runs": 7200,
+  "unique_keys": true,
+  "seed_pairing": true,
+  "attempt_acceptance_receipts_reconciled": true,
+  "finite_outcomes": true,
+  "source_and_data_hashes": true,
+  "source_hashes_checked": 15,
+  "source_hashes_unavailable": []
+}

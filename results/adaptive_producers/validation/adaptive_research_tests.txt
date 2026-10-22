@@ -1,0 +1,11 @@
+test_policy_pairs_match_world_id_instead_of_row_order (test_adaptive_analysis.PairedAnalysisTest.test_policy_pairs_match_world_id_instead_of_row_order) ... ok
+test_missing_run_machine_files_are_reported_but_changed_files_fail (test_adaptive_analysis.RecordedHashTest.test_missing_run_machine_files_are_reported_but_changed_files_fail) ... ok
+test_design_is_unique_and_covers_matched_controls (test_adaptive_experiment.AdaptiveExperimentTest.test_design_is_unique_and_covers_matched_controls) ... ok
+test_real_small_run_keeps_attempts_and_pairing (test_adaptive_experiment.AdaptiveExperimentTest.test_real_small_run_keeps_attempts_and_pairing) ... ok
+test_contrast_pairs_worlds_before_averaging (test_feed_capacity.FeedCapacityTest.test_contrast_pairs_worlds_before_averaging) ... ok
+test_small_real_sweep_is_paired_and_repeatable (test_feed_capacity.FeedCapacityTest.test_small_real_sweep_is_paired_and_repeatable) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.375s
+
+OK

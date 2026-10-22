@@ -1,0 +1,200 @@
+note: Running TeX ...
+warning: hyperref.sty:4873: Requested font "pzdr" at 0.00002pt
+warning: hyperref.sty:4873:  -> pzdr
+warning: DMAS-6-adaptive.tex:33: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 9.99997pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntx-Regular-tlf-ot1" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:51: Requested font "ntx-Regular-tlf-ot1" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:51: Requested font "ntx-Regular-tlf-ot1" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmi0" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmi0
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmi07" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmi07
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmi05" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmi05
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsy" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsy
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsy7" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsy7
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsy5" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsy5
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexx" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexx
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexx" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexx
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexx" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexx
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntxmia" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmia
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmia" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmia
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmia" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmia
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntxsym" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsym
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsym" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsym
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsym" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsym
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntxsyc" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsyc" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsyc" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexa" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexa
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexa" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexa
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexa" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexa
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: DMAS-6-adaptive.tex:52: Requested font "ntx-Regular-tlf-ot1" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxmi0" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxmi0
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxsy" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxsy
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxexx" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxexx
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxmia" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxmia
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxsym" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxsym
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxsyc" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxexa" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxexa
+warning: DMAS-6-adaptive.tex:56: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: DMAS-6-adaptive.tex:56: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: DMAS-6-adaptive.tex:58: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: DMAS-6-adaptive.tex:95: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: DMAS-6-adaptive.tex:311: 
+Requested font "[lmmono10-regular]:" at 10.0pt
+warning: DMAS-6-adaptive.tex:453: Underfull \vbox (badness 4366) has occurred while \output is active
+warning: DMAS-6-adaptive.tex:472: Underfull \hbox (badness 1331) in paragraph at lines 471--472
+warning: DMAS-6-adaptive.bbl:9: 
+Requested font "[lmmono9-regular]:" at 9.0pt
+note: Running BibTeX on DMAS-6-adaptive.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: hyperref.sty:4873: Requested font "pzdr" at 0.00002pt
+warning: hyperref.sty:4873:  -> pzdr
+warning: DMAS-6-adaptive.tex:33: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 9.99997pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: DMAS-6-adaptive.tex:33: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntx-Regular-tlf-ot1" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:51: Requested font "ntx-Regular-tlf-ot1" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:51: Requested font "ntx-Regular-tlf-ot1" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmi0" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmi0
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmi07" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmi07
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmi05" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmi05
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsy" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsy
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsy7" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsy7
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsy5" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsy5
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexx" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexx
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexx" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexx
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexx" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexx
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntxmia" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmia
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmia" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmia
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxmia" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxmia
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntxsym" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsym
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsym" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsym
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsym" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsym
+warning: DMAS-6-adaptive.tex:51: 
+Requested font "ntxsyc" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsyc" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxsyc" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexa" at 10.0pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexa
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexa" at 7.3pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexa
+warning: DMAS-6-adaptive.tex:51: Requested font "ntxexa" at 5.5pt
+warning: DMAS-6-adaptive.tex:51:  -> ntxexa
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: DMAS-6-adaptive.tex:51: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: DMAS-6-adaptive.tex:52: Requested font "ntx-Regular-tlf-ot1" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntx-Regular-tlf-ot1
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxmi0" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxmi0
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxsy" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxsy
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxexx" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxexx
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxmia" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxmia
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxsym" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxsym
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxsyc" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxsyc
+warning: DMAS-6-adaptive.tex:52: Requested font "ntxexa" at 9.0pt
+warning: DMAS-6-adaptive.tex:52:  -> ntxexa
+warning: DMAS-6-adaptive.tex:56: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: DMAS-6-adaptive.tex:56: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: DMAS-6-adaptive.tex:58: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: DMAS-6-adaptive.tex:95: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: DMAS-6-adaptive.tex:311: 
+Requested font "[lmmono10-regular]:" at 10.0pt
+warning: DMAS-6-adaptive.tex:453: Underfull \vbox (badness 4366) has occurred while \output is active
+warning: DMAS-6-adaptive.tex:472: Underfull \hbox (badness 1331) in paragraph at lines 471--472
+warning: DMAS-6-adaptive.bbl:9: 
+Requested font "[lmmono9-regular]:" at 9.0pt
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Not writing `DescriptionTexts.txt`: it would be empty.
+note: Writing `/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/report/DMAS-6-adaptive.aux` (14.56640625 KiB)
+note: Writing `/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/report/DMAS-6-adaptive.pdf` (599.794921875 KiB)
+note: Writing `/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/report/DMAS-6-adaptive.bbl` (1.3544921875 KiB)
+note: Writing `/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/report/DMAS-6-adaptive.out` (361 B)
+note: Writing `/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/report/DMAS-6-adaptive.log` (33.4052734375 KiB)
+note: Writing `/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/report/DMAS-6-adaptive.blg` (216 B)

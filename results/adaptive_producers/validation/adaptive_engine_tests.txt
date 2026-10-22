@@ -1,0 +1,10 @@
+test_repeated_reposts_already_in_feed_do_not_add_receipts (test_feed_receipts.FeedReceiptTest.test_repeated_reposts_already_in_feed_do_not_add_receipts) ... ok
+test_greedy_choice_changes_when_receipt_feedback_changes (test_policy_selection.NativeSelectionTest.test_greedy_choice_changes_when_receipt_feedback_changes) ... ok
+test_attempt_acceptance_and_cascade_receipts_reconcile (test_producer_policy.ProducerPolicyTest.test_attempt_acceptance_and_cascade_receipts_reconcile) ... ok
+test_invalid_and_midrun_configuration_is_rejected (test_producer_policy.ProducerPolicyTest.test_invalid_and_midrun_configuration_is_rejected) ... ok
+test_tracking_baseline_does_not_change_original_trajectory (test_producer_policy.ProducerPolicyTest.test_tracking_baseline_does_not_change_original_trajectory) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.416s
+
+OK

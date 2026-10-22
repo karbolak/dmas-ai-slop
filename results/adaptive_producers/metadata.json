@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-10-22T14:27:39.009610+00:00",
+  "python": "3.12.14",
+  "numpy": "1.26.4",
+  "research_revision": "33491071767f6a626ed9abf12a8ee67b24da8fec",
+  "simulator_revision": "4eea736d3695e3b707d74e757dafaa13b7176ccc",
+  "n_conditions": 36,
+  "replicates": 200,
+  "hashes": {
+    "/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/experiments/adaptive_producer_sweep.py": "ae5861ad882a7872a3ec111995279bf235b7a4f7044a431c0491e59a36f9579d",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/experiments/alpha_volume_sweep.py": "8f42e00df2b298d8327db0697afb10dd8062a858e4b1fec807440646cd5572e4",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/doces.py": "8b89588eba15f4fe6fef1a92f0c8b2042703d41a0282a8dc90ebafd37349fe09",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/dynamics.c": "31dba0db3368151949e62a676429f6c4f923b162f855aab1893fc39c22190a58",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/dynamics.h": "e5ce48407969cbf22c6fce26f46776d123f8b655a469bb6444d8eaa9510dbbc0",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/network.c": "0de9ac7bc999e7f241979165f08297c10d9c51bb517ec6374c139b53f13ab591",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/network.h": "ddd8b9cdb9e8d955830f1dca292ef0a08e195eeed114aea2b67660eab11a441e",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/post.c": "cc6575524e8b1eb82c9ba7d9d8a3ed4b70701f0de9b271f18ed2f2aaa14dcda1",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/post.h": "63d83d123ee7740dbc6cbe350d4c5d8d4f1957ff5baed0edc3569b5933771a1a",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/utils.c": "212b67f14ee43e52a262d76eab37b9a2778569a05ab6ab524861b44f27a00da8",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/utils.h": "16d25c90158013e86fbe5f43267d88ec60d42dc73701c52afdddd99f3d87943e",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Python/documentation.h": "6928ee05e3c76f169ee0c6dc2f1b84ded7e80f1c00c1008fc82e331a4d8767f4",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Python/opinionDynamics.c": "83c64640b969d73656c574c5a8a67968c04136917a3d590ca93a9c7cc8d9f36a",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Python/version.h": "f7affc651bc4c5ba63f99959ebbc5b2b9244934d7c12bd098e0c379b400f2c4e",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces_core.cpython-312-x86_64-linux-gnu.so": "38bc0bbed01230a6d93dcb6cf9bfbbcbab094b182c224c470cd5daac36f1ae5d"
+  },
+  "completed_utc": "2026-10-22T14:39:59.514982+00:00",
+  "runs": 7200,
+  "runs_sha256": "a6fbf2fa94db3322c118e7db3000f58ee700505538f072da1929cbe4f97a592a"
+}

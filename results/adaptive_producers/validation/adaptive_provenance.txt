@@ -1,0 +1,8 @@
+Total posts: 512
+Background posts: 2
+Experimental posts: 510
+Experimental exposure events: 415
+✓ Post origins are exposed correctly.
+✓ Background posts use origin -1.
+✓ Cascade stats expose provenance metadata.
+✓ Content provenance checks passed.

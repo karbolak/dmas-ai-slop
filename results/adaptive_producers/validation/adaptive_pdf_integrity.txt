@@ -1,0 +1,3 @@
+PASS: 23 pages, five resolved references, four correct clickable DOI links and the publisher book URL
+PASS: no text overflow, missing glyph notices, unresolved references, LaTeX errors or placeholders
+Visual QA: all pages inspected; final changed pages inspected again after layout refinement

@@ -1,0 +1,18 @@
+=== Weighted activation ===
+Counts:    [90041, 9960]
+Fractions: [0.9004009959900401, 0.0995990040099599]
+✓ 9:1 weighting behaves as expected
+
+=== Explicit uniform weights ===
+Counts:    [49898, 50103]
+Fractions: [0.4989750102498975, 0.5010249897501025]
+✓ Uniform weights behave as expected
+
+=== Input validation ===
+✓ rejected [-1.0, 1.0]
+✓ rejected [0.0, 0.0]
+✓ rejected [1.0, 2.0, 3.0]
+✓ rejected [nan, 1.0]
+✓ rejected [inf, 1.0]
+
+✓ Weighted activation checks passed.

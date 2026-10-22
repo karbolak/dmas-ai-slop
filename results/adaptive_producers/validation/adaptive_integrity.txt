@@ -1,0 +1,4 @@
+PASS: 7,200 unique runs; 36 complete conditions with 200 worlds each
+PASS: independently recomputed paired differences, interaction intervals and both Holm families
+PASS: attempt/accepted-post accounting and U = acceptance x receipts-per-post identity
+PASS: immutable raw data hash matches recorded run metadata
