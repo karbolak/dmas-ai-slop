@@ -1,0 +1,2 @@
+raw_rows,unique_rows_after_dedup,duplicate_keys,duplicate_rows_removed,max_key_multiplicity,inconsistent_duplicate_keys_on_core_metrics,unique_replicates,unique_conditions,D_sign_matches_exposure_efficiency_gap_fraction
+858916,430000,428916,428916,2,0,10000,43,1.0

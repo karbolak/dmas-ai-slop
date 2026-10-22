@@ -1,298 +1,69 @@
-# DMAS AI-Slop
+# DMAS: producer activity and relative exposure
 
-Research repository for the University of Groningen **Design of Multi-Agent Systems (DMAS)** project on synthetic-content amplification in social-media networks.
+Research code and final report for the University of Groningen Design of Multi-Agent Systems project. The simulator is in the sibling `doces-slop` repository.
 
-This repository contains **experiments, configuration files, analysis, figures, and paper-related research code**.
+The implemented research question is: **How do producer activity and prevalence affect a labelled subgroup's share of feed receipts relative to its share of production in DOCES?**
 
-The simulator itself lives in a separate repository:
+High-volume AI-generated content motivates the question. The model represents a fixed activity advantage, producer prevalence, and post provenance. It does not represent content quality, generative models, coordinated ownership, or producers adapting to engagement rewards. Adaptive follower rewiring is distinct from adaptive production strategy.
 
-```text
-DMAS/
-├── doces-slop/       # modified DOCES simulator
-└── dmas-ai-slop/     # this repository
-```
+## Layout
 
-## Research question
+- `experiments/alpha_volume_sweep.py`: original independent-world volume sweep.
+- `configs/volume_sweep_big.yaml`: original 10,000-world, 43-condition design.
+- `analysis/analyze_volume_sweep_final.py`: deduplication, statistical analysis and figures.
+- `experiments/feed_capacity_robustness.py`: focused paired capacity sensitivity experiment.
+- `configs/feed_capacity_robustness.yaml`: 200 worlds, capacities 1/5/20, prevalences 5%/25%, activities 1×/3×/15×.
+- `analysis/plot_feed_capacity.py`: regenerate the sensitivity figure and report table.
+- `results/feed_capacity_robustness/`: full new run data, configuration, seed manifest, summaries and provenance hashes.
+- `results/beta_revalidation/`: fresh analysis of the original run-level data.
+- `report/DMAS-5-final.tex`: editable report; see `report/README.md` for compilation.
 
-> **Under what conditions does the interaction between high-volume synthetic content production, adaptive attention-seeking behaviour, and algorithmic recommendation lead to disproportionate synthetic-content exposure in a social-media network?**
+## Environment and validation
 
-The project builds primarily on:
+Use Python 3.12 and the existing Conda specification, which pins NumPy below 2. Install the sibling simulator in that environment, or compile it in place and put its directory on `PYTHONPATH`:
 
-1. Oliveira, de Arruda, and Moreno, *Mechanistic interplay between information spreading and opinion polarization*.
-2. Tang et al., *Behind the “AI slop”: exploring the AI-generated viral short video production in China*.
-
-Pendergrass, Johnson, and Bacarella, *A strategic cycle of slop*, provides supporting conceptual grounding for the attention-reward feedback loop.
-
----
-
-## Current goal
-
-Before modifying the DOCES simulator, we first reproduce a qualitative baseline from Oliveira et al.
-
-The target result is the paper's comparison in which the same network and initial state can produce qualitatively different outcomes under different innovation probabilities:
-
-- `mu = 1.0`
-- `mu = 0.1`
-
-Oliveira et al. use an Erdős-Rényi network with:
-
-- `N = 1000`
-- mean in-degree `z = 10.21`
-- initial opinions sampled uniformly from `[-1, 1]`
-
-The main paper does **not fully specify every parameter needed to reproduce Figure 2 exactly**. Therefore, the provided configuration should currently be treated as a **qualitative replication scaffold**, not an exact reproduction claim. Exact reproduction should use the paper's Supporting Information and/or the parameterisation from the referenced earlier model.
-
----
-
-# Quick start
-
-## Environment setup
-
-The project uses Python 3.12 and Conda. DOCES contains a native C
-extension, so a C compiler is also required.
-
-Create the environment:
-
-```bash
-    conda env create -f environment.yml
-    conda activate dmas-ai-slop
-```
-
-Verify Python:
-
-```bash
-    python --version
-```
-
-Expected:
-
-```bash
-    Python 3.12.x
-```
-
-Because DOCES must compile its native extension, verify that the Conda
-compiler is available.
-
-After creating or updating the environment, it may help to reactivate it:
-
-```bash
-    conda deactivate
-    conda activate dmas-ai-slop
-```
-
-On Linux, inspect the available compiler with:
-
-```bash
-    ls $CONDA_PREFIX/bin | grep -E 'gcc|cc$'
-```
-
-### Fish shell
-
-If the `CC` environment variable is empty, set it explicitly to the
-compiler available inside the Conda environment.
-
-For example:
-
-```bash
-    set -gx CC $CONDA_PREFIX/bin/x86_64-conda-linux-gnu-cc
-```
-
-Then verify:
-
-```bash
-    $CC --version
-```
-
-If that exact compiler name does not exist, use the one returned by:
-
-```bash
-    ls $CONDA_PREFIX/bin | grep -E 'gcc|cc$'
-```
-
-### Bash / Zsh
-
-If necessary, set the compiler with:
-
-```bash
-    export CC="$CONDA_PREFIX/bin/x86_64-conda-linux-gnu-cc"
-```
-
-Then install the local DOCES fork:
-
-```bash
-    pip install -e ../doces-slop
-```
-
-Verify the installation:
-
-```bash
-    python -c "import doces; print('DOCES import works')"
-```
-
-Expected output:
-
-```bash
-    DOCES import works
-```
-
-Finally, check the full research environment:
-
-```bash
-    python scripts/check_setup.py
-```
-
-### Troubleshooting: DOCES build fails with `No such file or directory: 'gcc'`
-
-DOCES includes a compiled C extension. If:
-
-```bash
-    pip install -e ../doces-slop
-```
-
-fails with:
-
-```bash
-    error: [Errno 2] No such file or directory: 'gcc'
-```
-
-first reactivate the Conda environment:
-
-```bash
-    conda deactivate
-    conda activate dmas-ai-slop
-```
-
-Then inspect the installed compiler:
-
-```bash
-    ls $CONDA_PREFIX/bin | grep -E 'gcc|cc$'
-```
-
-For fish, set the compiler explicitly if necessary:
-
-```bash
-    set -gx CC $CONDA_PREFIX/bin/x86_64-conda-linux-gnu-cc
-```
-
-Then retry:
-
-```bash
-    pip install -e ../doces-slop
-```
-
-
-Do not fix this by upgrading Python or NumPy independently. The current
-DOCES version depends on `numpy<2.0`, and this project uses Python 3.12
-for compatibility.
-
-## 4. Check the research environment
-
-```bash
+```sh
+conda env create -f environment.yml
+conda activate dmas-ai-slop
+pip install -e ../doces-slop
 python scripts/check_setup.py
+python scripts/check_weighted_activation.py
+python scripts/check_content_provenance.py
+python -m unittest discover -s tests -v
 ```
 
-## 5. Run the Oliveira baseline experiment
+The simulator's own `baseline_smoke_test.py` and `tests/test_feed_receipts.py` provide additional checks. Existing native build warnings are documented in its `VALIDATION.md`.
 
-```bash
-python experiments/reproduce_oliveira.py \
-    --config configs/oliveira_qualitative.yaml
+## Reproduce the feed-capacity sensitivity experiment
+
+Run from this repository:
+
+```sh
+python -m experiments.feed_capacity_robustness
+python analysis/plot_feed_capacity.py
 ```
 
-Outputs are written to:
+The output directory must not already exist. Use `--output results/another_name` for an independent rerun. The runner deliberately refuses to append to or overwrite prior evidence. Interrupted outputs remain available for inspection; there is no automatic resume.
 
-```text
-results/oliveira_qualitative/
-figures/oliveira_qualitative/
+Each world shares its graph, initial opinions, nested producer identities and simulation seed across all 18 conditions. The new master seed is 20261022. All other simulation parameters match the original main sweep. A request for 100,000 iterations executes 100,001 activations under the inherited loop convention, which is retained for comparability.
+
+The new sensitivity analysis uses pointwise Student's t intervals and paired 15× minus 3× activity contrasts. It is exploratory and does not estimate a new zero crossing. Changing feed capacity also changes initialization, repost order and duplicate suppression, so it is not an isolated test of attention scarcity.
+
+## Reanalyse the main sweep
+
+The original raw data are distributed in `volume_sweep_big_results.tar.gz` and retained in the original local project checkout. Inspect archive paths before extracting to a fresh directory. Provide the extracted `runs.csv` to:
+
+```sh
+python analysis/analyze_volume_sweep_final.py \
+  --input /path/to/runs.csv \
+  --output-dir results/beta_revalidation \
+  --figures-dir figures/beta_revalidation
 ```
 
-The experiment runs the same generated network and initial opinion vector twice, changing only `mu`.
+The fresh analysis removes 428,916 duplicate rows from 858,916 raw rows and retains 430,000 unique condition-runs from 10,000 independent worlds. Checked core outcomes agree across duplicate keys. The main sweep's precision describes Monte Carlo uncertainty within the specified model, not empirical accuracy on a social-media platform.
 
----
+## Interpretation and further work
 
-# Repository layout
+Production counts accepted distinct innovations; exposure counts accepted follower feed insertions of posts absent from the receiving feed. Background initialization posts and their receipts are excluded from group metrics but remain active in the dynamics. Receipts are not unique audience reach, impressions or engagement.
 
-```text
-dmas-ai-slop/
-├── README.md
-├── environment.yml
-├── .gitignore
-├── configs/
-│   └── oliveira_qualitative.yaml
-├── experiments/
-│   └── reproduce_oliveira.py
-├── scripts/
-│   └── check_setup.py
-├── analysis/
-│   └── README.md
-├── figures/
-│   └── .gitkeep
-└── results/
-    └── .gitkeep
-```
-
----
-
-# Experimental principles
-
-We want the project to remain reproducible and interpretable.
-
-1. **Do not modify DOCES before establishing the baseline.**
-2. Use the **same network, initial opinions, and seed** when comparing model conditions.
-3. Change one mechanism at a time.
-4. Store experiment parameters with the results.
-5. Do not hard-code publication figures into analysis scripts.
-6. Separate simulator changes (`doces-slop`) from experiments (`dmas-ai-slop`).
-7. Do not call a result an exact replication unless every relevant parameter matches the source.
-8. Treat a "tipping point" or "phase transition" as an empirical finding to test for, not an assumption.
-
----
-
-# Planned progression
-
-- [x] Build and smoke-test unmodified DOCES
-- [ ] Reproduce Oliveira et al. qualitatively
-- [ ] Resolve exact Figure 2 parameterisation from Supporting Information
-- [ ] Freeze/tag baseline
-- [ ] Add producer type to DOCES
-- [ ] Add heterogeneous activation weights
-- [ ] Add content provenance
-- [ ] Compare synthetic production share vs. exposure share
-- [ ] Add adaptive synthetic producers
-- [ ] Test interaction with recommendation strength
-- [ ] Run ablations
-- [ ] Test interventions
-
----
-
-# Notes on the Oliveira baseline
-
-The qualitative experiment intentionally keeps network structure and initial opinions identical between conditions.
-
-The main paper reports that:
-
-- the network has `N = 1000`,
-- mean in-degree is `z = 10.21`,
-- initial opinions are sampled uniformly from `[-1, 1]`,
-- `mu = 1` corresponds to the original model,
-- changing only `mu` to `0.1` can produce a polarised two-community state.
-
-The paper also describes trajectories sampled every `10N` model iterations in a later characterisation experiment.
-
-The exact Figure 2 parameterisation is not fully stated in the main article text available to us. Until that is resolved, use this repository to validate the experiment pipeline and qualitative behaviour rather than to claim numerical replication.
-
----
-
-# Results policy
-
-Generated results and figures are ignored by Git by default, except placeholder `.gitkeep` files.
-
-For publication-quality experiments, every run should eventually record:
-
-- Git commit
-- configuration
-- random seed
-- timestamp
-- simulator version
-- summary statistics
-
-This metadata layer will be added once the baseline experiment is stable.
+Adaptive producer strategies, alternative networks, receiving rules, innovation rates, longer horizons, and initialization controls require separate experiments. A complete model of AI-slop production would also need an explicit reward and strategy-update rule.

@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-10-22T13:51:04.900703+00:00",
+  "python": "3.12.14",
+  "numpy": "1.26.4",
+  "research_revision": "0076cffe5862f8baf43c71ef0a74c9a1f6ca54c3",
+  "simulator_revision": "2062803b4de482a6ec6abc1e0913abd88542119f",
+  "simulator_path": "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/__init__.py",
+  "binary_path": "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces_core.cpython-312-x86_64-linux-gnu.so",
+  "sha256": {
+    "/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/experiments/feed_capacity_robustness.py": "3c992970a6d1d5b5b4325a17150e1e0ad14f935756d7c4f5292193279444b15c",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/dmas-ai-slop/experiments/alpha_volume_sweep.py": "8f42e00df2b298d8327db0697afb10dd8062a858e4b1fec807440646cd5572e4",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/dynamics.c": "892ff75649c1f4360b00555eb45df998ae4ec873974f5dc560df49f25864b56f",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/dynamics.h": "e5ce48407969cbf22c6fce26f46776d123f8b655a469bb6444d8eaa9510dbbc0",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/network.c": "fd3044a00d2c0fff1b11b6267b95803a55b0d418d8ccbb8d7cdad8aeef172f93",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/network.h": "0c6f6fa4d617f5462bbbdcff484c577642ba30830af9cae1a64fa9fcc50d9296",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/post.c": "05058567e2db9add00ca64aa1098de907fc8d1e37d2675e479c3fa70bab3bfb1",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/post.h": "e82acb89bba02e98fceba71477c8b24718fb7b2974c6efece87c9177562dd096",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/utils.c": "212b67f14ee43e52a262d76eab37b9a2778569a05ab6ab524861b44f27a00da8",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Source/utils.h": "16d25c90158013e86fbe5f43267d88ec60d42dc73701c52afdddd99f3d87943e",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Python/documentation.h": "6928ee05e3c76f169ee0c6dc2f1b84ded7e80f1c00c1008fc82e331a4d8767f4",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Python/opinionDynamics.c": "a64d178b1dae50f87001e6a62ae8a2cbeaa6f0e6e3e7a23968686914d70560c0",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/Python/version.h": "f7affc651bc4c5ba63f99959ebbc5b2b9244934d7c12bd098e0c379b400f2c4e",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces/doces.py": "99c9fa6514dbe051afee26fbeb259e7ef18c5c76df01fc3f0d34738d1a177207",
+    "/home/karbolak/Documents/ChatGPT/DMAS2/doces-slop/doces_core.cpython-312-x86_64-linux-gnu.so": "4e8ae1194e01b7811f5f5792cfab183b53554610ecd0cc299cf7ae89d4f8e470"
+  },
+  "note": "Uncommitted runner/config recorded by hashes and config.json; pointwise t intervals, no multiplicity adjustment.",
+  "completed_utc": "2026-10-22T13:57:53.691948+00:00",
+  "condition_runs": 3600,
+  "runs_sha256": "07c0fb0b23443b6a0e85b8b61c0f7eeb120cbf1d5c16fcb5780f1d2d707bfa83"
+}
