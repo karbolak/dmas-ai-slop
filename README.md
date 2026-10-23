@@ -1,6 +1,6 @@
 # DMAS: producer activity, content adaptation and relative exposure
 
-Research code and final report for the University of Groningen Design of Multi-Agent Systems project. The simulator is in the sibling `doces-slop` repository.
+Research code and final report for the University of Groningen Design of Multi-Agent Systems project. The simulator is in the sibling `doces-slop` repository. The final paper can be found [here](./dmas-ai-slop-paper.pdf)
 
 The extended research question is: **How do synthetic-producer activity and receipt-based content adaptation affect relative exposure in an adaptive social-network simulation?**
 
