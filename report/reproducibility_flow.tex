@@ -1,0 +1,20 @@
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[
+box/.style={draw,rounded corners=2pt,align=center,font=\small,inner sep=6pt,text width=9cm},
+arrow/.style={-{Stealth[length=2mm]},thick},node distance=6mm]
+\node[box] (engine) {\textbf{Modified DOCES engine}\\Weighted activation, provenance and producer policies};
+\node[box,below=of engine] (checks) {\textbf{Implementation checks}\\Baseline compatibility, policy decisions and receipt accounting};
+\node[box,below=of checks] (runs) {\textbf{Configured simulation runs}\\Record parameters, world seeds, code versions and binary hashes};
+\node[box,below=of runs] (data) {\textbf{Saved outcomes and integrity checks}\\Check condition coverage, counters and matching world identifiers\\Remove duplicate activity-sweep rows and verify agreement};
+\node[box,below=of data] (analysis) {\textbf{Reproducible analysis}\\Paired comparisons, uncertainty intervals and multiplicity correction};
+\node[box,below=of analysis] (report) {\textbf{Report outputs}\\Generate tables and figures from saved outcomes};
+\draw[arrow] (engine) -- (checks);
+\draw[arrow] (checks) -- (runs);
+\draw[arrow] (runs) -- (data);
+\draw[arrow] (data) -- (analysis);
+\draw[arrow] (analysis) -- (report);
+\end{tikzpicture}
+\caption{Implementation and reproducibility workflow. Saved run outcomes support analysis independently of rerunning the simulator. Version and hash records identify the implementation used for each experiment.}
+\label{fig:reproducibility-flow}
+\end{figure}

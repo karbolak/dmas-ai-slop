@@ -1,0 +1,23 @@
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+box/.style={draw,rounded corners=2pt,align=center,font=\small,inner sep=6pt,text width=3.35cm},
+arrow/.style={-{Stealth[length=2mm]},thick},node distance=7mm]
+\node[box,text width=9cm] (world) {Generate independent worlds\\Network, initial opinions and producer assignment};
+\node[box,below=9mm of world,xshift=-2.5cm] (activity) {\textbf{Activity sweep}\\10,000 worlds\\Vary prevalence\\and activity\\43 conditions per world};
+\node[box,below=9mm of world,xshift=2.5cm] (policy) {\textbf{Policy comparison}\\200 worlds\\Baseline, random-bin\\and adaptive producers};
+\node[box,below=of activity] (capacity) {\textbf{Activity sensitivity}\\200 separate worlds\\Vary feed capacity,\\prevalence and activity};
+\node[box,below=of policy] (policycap) {\textbf{Policy sensitivity}\\Same 200 policy worlds\\Compare policies with\\larger feeds};
+\node[box,text width=9cm,below=9mm of capacity,xshift=2.5cm] (measure) {Record accepted production, feed receipts and provenance\\For policy runs, also record attempts and strategy choices};
+\node[box,text width=9cm,below=of measure] (compare) {Compare conditions within each world\\Summarise means, paired differences and uncertainty};
+\draw[arrow] (world.south) -- ++(0,-4mm) -| (activity.north);
+\draw[arrow] (world.south) -- ++(0,-4mm) -| (policy.north);
+\draw[arrow] (activity) -- (capacity);
+\draw[arrow] (policy) -- (policycap);
+\draw[arrow] (capacity.south) -- ++(0,-4mm) -| (measure.north);
+\draw[arrow] (policycap.south) -- ++(0,-4mm) -| (measure.north);
+\draw[arrow] (measure) -- (compare);
+\end{tikzpicture}
+\caption{Experimental overview. Each component reuses a world's starting conditions across its comparisons. The activity-sensitivity sample is independent of the main sweep and policy comparison; the policy-sensitivity conditions share the policy comparison's worlds. The arrows indicate the workflow, not additional simulation stages.}
+\label{fig:experimental-flow}
+\end{figure}
